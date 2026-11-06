@@ -8,7 +8,8 @@
     "build": "tsc -b && vite build",
     "check:payments": "tsc -p server/tsconfig.json",
     "verify": "npm run build && npm run check:payments",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:cloudflare": "npm run verify && node scripts/cloudflare-build.mjs"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^4.6.0",
